@@ -30,14 +30,18 @@
   border: 3px solid white;
   border-radius: 0.5rem;
   width: 15rem;
-}
-
-.homeAwayBack {
-  background-color: #656565;
+  background-color: gray;
 }
 
 .possession {
-  background-color: #ff2d2b
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hasBall {
+  background-color: goldenrod;
 }
 
 .home__name,

@@ -13,7 +13,7 @@ function App() {
     <div className="container">
       <section className="scoreboard">
         <div className="topRow">
-          <div className="homeAwayBack">
+          <div className="homeAwayBack hasBall">
             <h2 className="home__name">Lions</h2>
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
@@ -21,7 +21,7 @@ function App() {
             <div className="home__score">{homeScore}</div>
           </div>
           <div className="timer">00:03</div>
-          <div className="homeAwayBack possession">
+          <div className="homeAwayBack">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
           </div>
@@ -61,11 +61,16 @@ function App() {
           </button>
         </div>
         <div className="awayReset">
-          <button className="resetButtons" onClick={ () => setAwayScore(awayScore == 0) }>
+          <button className="resetButtons" onClick={ () => setAwayScore(awayScore = 0) }>
             Away Reset     
           </button>
         </div>
       </section>
+      <div className="possession">
+        <button className="possessionButton">
+          Possession
+        </button>
+      </div>
     </div>
   );
 }
